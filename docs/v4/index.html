@@ -125,7 +125,7 @@ const T={
 T.zh=Object.assign({},T.en,{ver:"查看菜單",res:"訂位",map:"如何前往",dest:"招牌推薦",vacio:"菜單準備中，請稍後再來。",pref:"全部",veg:"素食",pic:"辣",fr:"❄️ 冷飲",ca:"🔥 熱飲",am:"🔥❄️ 冷熱皆可",nuevo:"新品",pend:"[價格]",aler:"過敏原：點餐前請務必向店員詢問。各項資料可能尚未核實。",cred:"由 TuCartaWeb 提供電子菜單",stat:"匿名統計，不使用 Cookie。",ub:"位置",hor:"營業時間",cont:"聯絡",cerrar:"關閉",plato_sin:"菜單審核中：部分價格待確認。",al:Object.assign({},T.en.al,{milk:"乳製品",gluten:"麩質",egg:"蛋",fish:"魚",shellfish:"甲殼類",molluscs:"軟體動物",nuts:"堅果",peanuts:"花生",soy:"大豆",celery:"芹菜",mustard:"芥末",sesame:"芝麻",sulphites:"亞硫酸鹽",lupin:"羽扇豆"})});
 let VARIANTE="pestanas"; const DIN=false, GC="", FOTOS="../fotos/", API="https://menusweb-api.antonio-valenzuela-valdes.workers.dev", RID="la-luna-cafe-bar-carta";
 const fm=f=>/^(https?:|data:)/.test(f)?f:FOTOS+"min/"+f;
-function ev(n){try{if(DIN&&window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:n,title:n,event:true})}catch(x){}}
+function ev(n){try{if(DIN&&window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:(typeof GP==="string"?GP:"")+n,title:n,event:true})}catch(x){}}
 const fu=f=>/^(https?:|data:)/.test(f)?f:FOTOS+f;
 let C=null;
 const R=CARTA.restaurante;
